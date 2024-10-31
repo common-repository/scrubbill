@@ -1,0 +1,26 @@
+{
+	"apiVersion": 2,
+	"name": "scrubbill/postnet-selector-block",
+	"version": "1.0",
+	"title": "PostNet Branch Selector",
+	"category": "woocommerce",
+	"description": "Adds a drop down selector for a user to choose a PostNet branch.",
+	"supports": {
+		"html": false,
+		"align": false,
+		"multiple": false,
+		"reusable": false
+	},
+	"parent": [ "woocommerce/checkout-shipping-methods-block" ],
+	"attributes": {
+		"lock": {
+			"type": "object",
+			"default": {
+				"remove": true,
+				"move": true
+			}
+		}
+	},
+	"textdomain": "scrubbill",
+	"editorScript": "file:./index.js"
+}
